@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="qt5-doc"
-VERSION=5.1.0
+VERSION=5.2.1
 RELEASE=1
 CATEGORY="Doc"
 SUMMARY="Qt C++ application framework (general documentation)"
@@ -13,6 +13,8 @@ investments made on one platform across many others."
 HOMEPAGE="http://qt-project.org/"
 SRC_URI="http://download.qt-project.org/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtdoc-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qtdoc-opensource-src-${VERSION}"
+
+ARCH=noarch
 
 src_compile() {
 	cd ${B}
